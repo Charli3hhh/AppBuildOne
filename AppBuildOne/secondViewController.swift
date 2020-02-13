@@ -23,7 +23,9 @@ class secondViewController: UIViewController {
     
     @IBAction func calculateButtonPressed(_ sender: Any)
     {
-    self.notextLabel.text = print(firstInteger + secondInteger)
+        self.notextLabel.text = String(firstInteger + secondInteger)
+        
+        
     }
     
     /*
