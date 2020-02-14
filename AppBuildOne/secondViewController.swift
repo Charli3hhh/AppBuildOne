@@ -24,8 +24,14 @@ class secondViewController: UIViewController {
     @IBAction func calculateButtonPressed(_ sender: Any)
     {
         self.notextLabel.text = String(firstInteger + secondInteger)
-        
-        
+        if firstInteger < secondInteger
+        {
+            self.view.backgroundColor = UIColor.orange
+        }
+        else
+        {
+            self.view.backgroundColor = UIColor.yellow
+        }
     }
     
     /*
